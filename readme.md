@@ -53,11 +53,3 @@ Once started, the app will be accessible at `http://127.0.0.1:5000/`.
 - Python 3.x
 - Flask (as specified in `requirements.txt`)
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Author
-
-[Zephir0g](https://github.com/Zephir0g)
-
