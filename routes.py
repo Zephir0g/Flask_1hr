@@ -9,7 +9,6 @@ def create_routes(app):
         return render_template('index.html')
 
 
-    # create note endpoint
     @app.route('/notes', methods=["POST"])
     def create_note():
         data = request.get_json()
@@ -30,7 +29,6 @@ def create_routes(app):
         }), 201
 
 
-    # get note endpoint
     @app.route('/notes', methods=["GET"])
     def get_notes():
         notes = Note.query.order_by(Note.created_at.desc()).all()
@@ -46,7 +44,6 @@ def create_routes(app):
         }), 200
 
 
-    # get note by id endpoint
     @app.route('/notes/<int:id>', methods=['GET'])
     def get_note(id):
         note = Note.query.get(id)
@@ -61,7 +58,6 @@ def create_routes(app):
             }), 200
 
 
-    # update note endpoint
     @app.route('/notes/<int:id>', methods=["PUT"])
     def update_note(id):
         note = Note.query.get(id)
@@ -87,7 +83,6 @@ def create_routes(app):
         }), 200
 
 
-    # delete note endpoint
     @app.route('/notes/<int:id>', methods=["DELETE"])
     def delete_note(id):
         note = Note.query.get(id)
