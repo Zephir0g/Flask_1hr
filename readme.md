@@ -6,8 +6,14 @@ A minimal Flask-based project setup. Use this as a boilerplate for quick prototy
 
 Follow the instructions below to create and activate a virtual environment, then install the required dependencies.
 
-### Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Run `app.py`
+
+```bash
+python app.py
 ```
