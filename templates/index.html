@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Notes</h1>
+
+    <form id="noteForm">
+        <input type="text" id="title" placeholder="Title" required />
+        <br />
+        <textarea id="content" placeholder="Content" required></textarea>
+        <br />
+        <button type="submit">Add Note</button>
+    </form>
+
+    <hr />
+
+    <div id="notesList">
+        <p>Loading notes...</p>
+    </div>
+</body>
+</html>
