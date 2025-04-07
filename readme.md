@@ -1,6 +1,6 @@
 # FlaskList
 
-FlaskList is a minimalist Flask-based project designed for rapid prototyping or as a foundation for more complex applications.
+Template repository
 
 ## Project Structure
 
